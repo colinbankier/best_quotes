@@ -1,6 +1,7 @@
 
 class QuotesController < Rulers::Controller
 	def a_quote
-		"There is nothing like a quote: #{ [1, 2, 3, 4, 5, 6].sum }"
+		@variable = "Give me some fish!"
+		render :a_quote, :noun => :winking
 	end
 end
